@@ -12,7 +12,7 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-model Chords {
+model chords {
   id Int @id @default(autoincrement())
   strings String @db.VarChar(255)
   fingering String @db.VarChar(255)
